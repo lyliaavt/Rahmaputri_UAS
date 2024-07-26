@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen - Universitas Amikom Yogyakarta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <img src="logo.png" alt="Universitas Amikom Yogyakarta">
+            <h1>Universitas Amikom<br>Yogyakarta</h1>
+        </div>
+        <button class="logout">Logout</button>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="profile.png" alt="Profile">
+                <p>RAHMA PUTRI RINASYA</p>
+                <p>23.01.5088</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Edit Profil</a></li>
+                    <li><a href="">Jadwal</a></li>
+                    <li><a href="">Nilai</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h2>Dashboard Dosen</h2>
+            <div class="semester-info">
+                <p>Semester - Genap TA. 2023/2024</p>
+            </div>
+            <div class="qr-section">
+                <div>
+                    <h3>QR DOSEN</h3>
+                    <img src="qr-code.png" alt="QR Code">
+                </div>
+                <div class="status">
+                    <h3>Status di Semester - Genap TA. 2023/2024</h3>
+                    <div class="status-info">
+                        <img src="checkmark.png" alt="Aktif">
+                        <p>AKTIF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="version">23.01.5088</p>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #6D3E9C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.logo-title h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logout {
+    background-color: #E12B2B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #e0e0e0;
+    width: 200px;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.semester-info {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.qr-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.qr-section div {
+    text-align: center;
+}
+
+.status-info {
+    display: flex;
+    align-items: center;
+}
+
+.status-info img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.version {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 12px; 
+    color: black;
+}
