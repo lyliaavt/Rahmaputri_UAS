@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+        .header {
+            background-color: #6D3E9C;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .header button {
+            background-color: #E12B2B;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header img {
+            height: 70px;
+            margin-right: 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #D9D9D9;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 50%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .sidebar .menu {
+            margin-top: 30px;
+        }
+        .sidebar .menu a {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            background-color: #D9D9D9;
+        }
+        .sidebar .menu a:hover {
+            background-color: #D9D9D9;
+        }
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            color: #000000;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .status h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #000000;
+        }
+        .status-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .status-content img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .schedule {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule table, .schedule th, .schedule td {
+            border: 1px solid #ddd;
+        }
+        .schedule th, .schedule td {
+            padding: 8px;
+            text-align: left;
+        }
+        .schedule th {
+            background-color: #3E0EA5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <img src="C:\Users\acer\Documents\Pemrograman Web\logo.png" alt="Amikom Logo">
+            Universitas Amikom Yogyakarta
+        </h1>
+        <button>Logout</button>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="C:\Users\acer\Documents\Pemrograman Web\profile.png" alt="Profile Picture">
+            <h2>RAHMA PUTRI RINASYA</h2>
+            <p>23.01.5088</p>
+            <div class="menu">
+                <a href="#">Edit Profil</a>
+                <a href="#">Jadwal</a>
+                <a href="#">Nilai</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>DASHBOARD DOSEN</h1>
+            <div class="schedule">
+                <h2>Jadwal</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Hari | Jam</th>
+                            <th>Mata Kuliah</th>
+                            <th>Kelas | Ruang</th>
+                            <th>Online</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Senin | 08.30 - 10.30</td>
+                            <td>PEMROGRAMAN WEB (Teori)</td>
+                            <td>23D3TI-Pemrog2(DT196) 07.02.01</td>
+                            <td>Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Selasa | 13.20 - 15.00</td>
+                            <td>PEMROGRAMAN WEB (Praktikum)</td>
+                            <td>23D3TI-Pemrog2(DT196) 07.04.01</td>
+                            <td>Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Rabu | 10.40 - 12.20</td>
+                            <td>PEMROGRAMAN WEB (Teori)</td>
+                            <td>23D3TI-Pemrog2(DT196) 05.02.04</td>
+                            <td>Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Kamis | 13.20 - 15.00</td>
+                            <td>PEMROGRAMAN WEB (Teori)</td>
+                            <td>23D3TI-Pemrog2(DT196) 05.03.08</td>
+                            <td>Zoom</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Jum'at | 15.30 - 17.10</td>
+                            <td>PEMROGRAMAN WEB (Praktikum)</td>
+                            <td>23D3TI-Pemrog2(DT196) 07.04.01</td>
+                            <td>Zoom</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
